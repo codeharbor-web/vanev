@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanev Capital</title>
+    <meta name="description" content="Vanev Capital is an investment and strategic management firm focused on artificial intelligence, innovative capital, and long-term value creation.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="assets/logo.jpg">
+
+    <!-- Open Graph / Social Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vanevcapital.com/">
+    <meta property="og:title" content="Vanev Capital | AI & Innovative Capital">
+    <meta property="og:description" content="An investment and strategic management firm focused on artificial intelligence, innovative capital, and long-term value creation.">
+    <meta property="og:image" content="assets/vanev-capital-og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://vanevcapital.com/">
+    <meta name="twitter:title" content="Vanev Capital | AI & Innovative Capital">
+    <meta name="twitter:description" content="An investment and strategic management firm focused on artificial intelligence, innovative capital, and long-term value creation.">
+    <meta name="twitter:image" content="assets/vanev-capital-og-image.jpg">
+
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=3">
+    <style>
+        .interactive-board {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 100px;
+            align-items: stretch;
+        }
+        .board-member-card {
+            padding: 0 25px 40px 25px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .bm-brief {
+            display: grid;
+            grid-template-rows: 2.8rem 3.6rem 1fr auto;
+            flex: 1 1 auto;
+        }
+        .bm-name {
+            font-size: clamp(1.2rem, 1.45vw, 1.55rem);
+            white-space: nowrap;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+        }
+        .bm-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin: 0 0 20px 0;
+            line-height: 1.4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand nav-logo">
+                <img src="assets/logo.jpg" alt="Vanev Capital" class="nav-logo-img">
+                <span class="nav-logo-text">Vanev Capital</span>
+            </a>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li class="has-dropdown">
+                    <a href="#segments">Business <span class="nav-arrow">▾</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#segments">Four Core Segments</a></li>
+                        <li><a href="#philosophy">Investment Philosophy</a></li>
+                        <li><a href="#capabilities">Core Capabilities</a></li>
+                        <li><a href="#platforms">Platforms</a></li>
+                    </ul>
+                </li>
+                <li><a href="#leadership">Leadership</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="#contact" class="nav-btn">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO -->
+        <section id="hero" class="hero">
+            <!-- Background Video -->
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="assets/vanev-hero.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content container">
+                <div class="hero-text-wrapper">
+                    <h1 class="fade-up" style="animation-delay: 0.2s;">CAPITAL.<br>INTELLIGENCE.<br><span class="accent-text">LONG-TERM VALUE.</span></h1>
+                    <p class="fade-up" style="animation-delay: 0.5s;">Vanev Capital connects capital, technology, data, talent, and real-world industry needs to identify and support opportunities built for long-term value creation.</p>
+                    <p class="fade-up" style="animation-delay: 0.6s; margin-top: 1.5rem;">Our vision is taking shape. More from Vanev Capital is yet to come.</p>
+                    <div class="hero-cta fade-up" style="animation-delay: 0.8s;">
+                        <a href="#about" class="btn-primary">Explore Vanev Capital</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION ADVANCED -->
+        <section id="about" class="about-modern reveal">
+            <div class="container">
+                <div class="about-grid-advanced">
+                    <!-- Left Side: Overlapping Images -->
+                    <div class="about-visuals">
+                        <div class="img-wrapper main-img">
+                            <img src="assets/about-main.jpg" alt="Vanev Capital Architecture">
+                        </div>
+                        <div class="img-wrapper secondary-img">
+                            <img src="assets/about-sub.jpg" alt="Vanev Capital Detail">
+                        </div>
+                        <div class="accent-box"></div>
+                    </div>
+                    
+                    <!-- Right Side: Content -->
+                    <div class="about-content">
+                        <div class="section-label">THE FIRM</div>
+                        <h2>About Vanev Capital</h2>
+                        <div class="accent-line"></div>
+                        <p class="lead-text">Vanev Capital is an investment and strategic management firm focused on artificial intelligence, innovative capital, and long-term value creation.</p>
+                        <p>The company is committed to connecting capital, technology, data, talent, and real-world industry needs through investment, research, and strategic resource integration, identifying and supporting companies and innovative projects with long-term development potential.</p>
+                        <p>Our philosophy is not simply to seek short-term returns, but to focus on whether a company can truly establish sustainable competitive advantages.</p>
+                        <p>For potential investments and strategic partnerships, Vanev Capital evaluates not only financial performance and market valuation, but also technology capabilities, business models, management teams, organizational efficiency, market opportunities, and long-term capital returns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOUR CORE BUSINESS SEGMENTS -->
+        <section id="segments" class="segments-section reveal">
+            <div class="container">
+                <div class="segments-header">
+                    <div class="section-label">CORE BUSINESS</div>
+                    <h2>Four Core Business Segments</h2>
+                    <div class="accent-line"></div>
+                    <p class="lead-text">Representing Vanev Capital's core business philosophy and operational foundation across global markets and institutional finance.</p>
+                </div>
+
+                <div class="segments-matrix">
+                    <!-- Segment 1 -->
+                    <div class="matrix-cell">
+                        <div class="cell-header">
+                            <span class="cell-num">01</span>
+                            <span class="cell-tag">SEGMENT I</span>
+                        </div>
+                        <h3 class="cell-title">Global Multi-Asset Investment Management</h3>
+                        <p class="cell-desc">Equities, fixed income, foreign exchange (FX), commodities, alternative investments, and digital assets.</p>
+                    </div>
+
+                    <!-- Segment 2 -->
+                    <div class="matrix-cell">
+                        <div class="cell-header">
+                            <span class="cell-num">02</span>
+                            <span class="cell-tag">SEGMENT II</span>
+                        </div>
+                        <h3 class="cell-title">AI & Quantitative Finance</h3>
+                        <p class="cell-desc">AI is used solely to support decision-making. We reject black-box systems and retain human accountability for all final decisions.</p>
+                    </div>
+
+                    <!-- Segment 3 -->
+                    <div class="matrix-cell">
+                        <div class="cell-header">
+                            <span class="cell-num">03</span>
+                            <span class="cell-tag">SEGMENT III</span>
+                        </div>
+                        <h3 class="cell-title">Vanev Private Wealth</h3>
+                        <p class="cell-desc">Serving high-net-worth (HNW) and ultra-high-net-worth (UHNW) individuals and family offices.</p>
+                    </div>
+
+                    <!-- Segment 4 -->
+                    <div class="matrix-cell">
+                        <div class="cell-header">
+                            <span class="cell-num">04</span>
+                            <span class="cell-tag">SEGMENT IV</span>
+                        </div>
+                        <h3 class="cell-title">Digital Transformation for Institutional Finance</h3>
+                        <p class="cell-desc">Providing B2B AI, data governance, and process mining solutions to banks and asset management firms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHILOSOPHY SECTION NEW -->
+        <section id="philosophy" class="philosophy-modern reveal">
+            <div class="container">
+                <div class="section-label" style="text-align: center; margin-bottom: 24px;">OUR APPROACH</div>
+                <h2 style="text-align: center; margin-bottom: 60px;">Investment Philosophy</h2>
+                
+                <div class="philosophy-statement" style="position: relative; overflow: hidden; padding: 120px 40px; margin-bottom: 80px; text-align: center; border-radius: 4px; border: 1px solid #1a1a1a;">
+                    <video autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; opacity: 0.7; filter: grayscale(60%) brightness(0.9);">
+                        <source src="assets/14683903_3840_2160_30fps (1).mp4" type="video/mp4">
+                    </video>
+                    <div style="position: absolute; inset: 0; background: radial-gradient(circle, rgba(5,5,5,0.4) 0%, rgba(5,5,5,0.95) 100%); z-index: 2;"></div>
+                    <h3 style="position: relative; z-index: 3; font-family: var(--font-heading); font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 300; letter-spacing: 0.05em; line-height: 1.6; max-width: 900px; margin: 0 auto; text-transform: uppercase; color: #ffffff; text-shadow: 0 4px 20px rgba(0,0,0,0.9);">"Our philosophy is not simply to seek short-term returns, but to focus on whether a company can truly establish sustainable competitive advantages."</h3>
+                </div>
+
+                <div class="philosophy-grid-new">
+                    <!-- Left: Explanation & Image -->
+                    <div class="phil-explanation">
+                        <div class="accent-line"></div>
+                        <p class="lead-text">For potential investment and cooperation projects, we not only focus on financial performance and market valuation, but also conduct in-depth research into critical success drivers.</p>
+                        <div class="phil-image-wrapper">
+                            <img src="assets/philosophy-main-edited.png" alt="Vanev Capital Philosophy Boardroom">
+                        </div>
+                    </div>
+
+                    <!-- Right: Dimensions List -->
+                    <div class="phil-dimensions">
+                        <h4 class="dim-title">Evaluation Dimensions</h4>
+                        <ul class="dim-list">
+                            <li><span class="dim-num">01</span> Technology Capabilities</li>
+                            <li><span class="dim-num">02</span> Business Models</li>
+                            <li><span class="dim-num">03</span> Management Teams</li>
+                            <li><span class="dim-num">04</span> Organizational Efficiency</li>
+                            <li><span class="dim-num">05</span> Market Opportunities</li>
+                            <li><span class="dim-num">06</span> Financial Performance</li>
+                            <li><span class="dim-num">07</span> Long-term Capital Returns</li>
+                            <li><span class="dim-num">08</span> Risk Factors</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERTISE / CAPABILITIES SECTION -->
+        <section id="capabilities" class="capabilities-modern reveal">
+            <div class="container">
+                <div class="section-label">EXPERTISE</div>
+                <h2>Core Capabilities</h2>
+                <div class="accent-line"></div>
+                <p class="lead-text" style="max-width: 800px; margin-bottom: 50px; color: #e0e0e0; font-size: 1.25rem; line-height: 1.7;">Vanev Capital brings together investment, research, technology, strategic management, and talent to support companies and opportunities with long-term growth potential.</p>
+                
+                <div class="capabilities-grid-advanced">
+                    
+                    <!-- Capability 1: Image Card -->
+                    <div class="cap-card img-card">
+                        <img src="assets/cap-ai.jpg" alt="AI & Emerging Technology Investments">
+                        <div class="cap-overlay"></div>
+                        <div class="cap-content">
+                            <span class="cap-num">01</span>
+                            <h3>AI & Emerging Technology Investments</h3>
+                            <p>Investing in and researching AI, data technology, automation, FinTech, Web3.0, and other innovative technology companies with long-term growth potential.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Capability 2: Text Card -->
+                    <div class="cap-card text-card">
+                        <span class="cap-num">02</span>
+                        <h3>Startup Investment & Incubation</h3>
+                        <p>Identifying promising startup teams and supporting their early development and long-term growth through capital, talent, strategy, and industry resources.</p>
+                    </div>
+                    
+                    <!-- Capability 3: Text Card -->
+                    <div class="cap-card text-card">
+                        <span class="cap-num">03</span>
+                        <h3>Investment Research & Project Evaluation</h3>
+                        <p>Conducting systematic research and evaluation of potential investment projects based on technology capabilities, business models, management teams, market opportunities, financial performance, and risk factors.</p>
+                    </div>
+
+                    <!-- Capability 4: Image Card -->
+                    <div class="cap-card img-card">
+                        <img src="assets/cap-strategy.jpg" alt="Corporate Strategy & Post-Investment Management">
+                        <div class="cap-overlay"></div>
+                        <div class="cap-content">
+                            <span class="cap-num">04</span>
+                            <h3>Corporate Strategy & Post-Investment Management</h3>
+                            <p>Providing portfolio companies with support in AI transformation, organizational development, operational optimization, talent strategy, business models, and growth strategies.</p>
+                        </div>
+                    </div>
+
+                    <!-- Capability 5: Image Card -->
+                    <div class="cap-card img-card">
+                        <img src="assets/cap-market.jpg" alt="Capital Markets & Asset Allocation Research">
+                        <div class="cap-overlay"></div>
+                        <div class="cap-content">
+                            <span class="cap-num">05</span>
+                            <h3>Capital Markets & Asset Allocation Research</h3>
+                            <p>Conducting long-term research on stocks, funds, gold, BTC, and other digital and emerging assets, with a focus on asset allocation, market cycles, liquidity, and risk management.</p>
+                        </div>
+                    </div>
+
+                    <!-- Capability 6: Text Card -->
+                    <div class="cap-card text-card">
+                        <span class="cap-num">06</span>
+                        <h3>AI & Data-Driven Investment Research</h3>
+                        <p>Using AI, data analytics, and quantitative tools to improve market research, project screening, risk identification, and investment decision-making efficiency.</p>
+                    </div>
+
+                    <!-- Capability 7: Image Card Full Width -->
+                    <div class="cap-card img-card" style="grid-column: 1 / -1; min-height: 400px;">
+                        <img src="assets/philosophy-image.jpg" alt="Executive Talent & Organizational Strategy">
+                        <div class="cap-overlay"></div>
+                        <div class="cap-content">
+                            <span class="cap-num">07</span>
+                            <h3>Executive Talent & Organizational Strategy</h3>
+                            <p>Connecting companies, capital, and senior talent to help investment projects and partner companies establish management teams, industry expert networks, and long-term talent systems.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PLATFORMS SECTION ADVANCED -->
+        <section id="platforms" class="platforms-modern reveal">
+            <div class="container">
+                <div class="section-label">OUR ECOSYSTEM</div>
+                <h2>Vanev Capital Platforms</h2>
+                <div class="accent-line"></div>
+                
+                <div class="platforms-grid-advanced">
+                    
+                    <!-- Platform 1 -->
+                    <div class="plat-card">
+                        <img src="assets/plat-ventures.jpg" alt="Vanev Ventures" class="plat-bg">
+                        <div class="plat-overlay"></div>
+                        <div class="plat-content">
+                            <h3>Vanev Ventures</h3>
+                            <p>AI and emerging technology venture investment business, primarily focused on innovative companies in the early and growth stages.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Platform 2 -->
+                    <div class="plat-card">
+                        <img src="assets/plat-research.jpg" alt="Vanev AI Research" class="plat-bg">
+                        <div class="plat-overlay"></div>
+                        <div class="plat-content">
+                            <h3>Vanev AI Research</h3>
+                            <p>A research platform covering AI, data technology, industry trends, and investment opportunities, providing research support for internal investment decisions.</p>
+                        </div>
+                    </div>
+
+                    <!-- Platform 3 -->
+                    <div class="plat-card">
+                        <img src="assets/plat-portfolio.jpg" alt="Vanev Portfolio Solutions" class="plat-bg">
+                        <div class="plat-overlay"></div>
+                        <div class="plat-content">
+                            <h3>Vanev Portfolio Solutions</h3>
+                            <p>Post-investment value creation services for portfolio companies, including AI transformation, operational optimization, and growth support.</p>
+                        </div>
+                    </div>
+
+                    <!-- Platform 4 -->
+                    <div class="plat-card">
+                        <img src="assets/cap-market.jpg" alt="Vanev Capital Markets" class="plat-bg">
+                        <div class="plat-overlay"></div>
+                        <div class="plat-content">
+                            <h3>Vanev Capital Markets</h3>
+                            <p>Long-term research, asset allocation, and risk management covering global capital markets, gold, BTC, and other liquid asset classes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Platform 5 -->
+                    <div class="plat-card">
+                        <img src="assets/cap-ai.jpg" alt="Vanev Intelligence" class="plat-bg">
+                        <div class="plat-overlay"></div>
+                        <div class="plat-content">
+                            <h3>Vanev Intelligence</h3>
+                            <p>Uses AI and data analytics for project screening, market analysis, risk identification, and investment decision optimization to improve capital efficiency.</p>
+                        </div>
+                    </div>
+
+                    <!-- Platform 6 -->
+                    <div class="plat-card">
+                        <img src="assets/about-sub.jpg" alt="Vanev Talent & Advisory" class="plat-bg">
+                        <div class="plat-overlay"></div>
+                        <div class="plat-content">
+                            <h3>Vanev Talent & Advisory</h3>
+                            <p>Provides senior talent, industry experts, management consulting, and strategic advisory resources for portfolio companies and partners.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- LEADERSHIP -->
+        <section id="leadership" class="reveal">
+            <div class="container">
+                <div class="section-label">LEADERSHIP</div>
+                
+                <div class="founder-section">
+                    <div class="founder-img-placeholder">
+                        <img src="elena.jpg" alt="Elena Dubois">
+                    </div>
+                    <div class="founder-content">
+                        <div class="founder-identity">
+                            <h3>Elena Dubois</h3>
+                            <p>Co-Founder & Board Member</p>
+                        </div>
+                        <div class="founder-bio">
+                            <p class="lead-text">Born in Europe and raised and educated in Singapore, Elena completed her undergraduate bachelor’s degree in the United Kingdom. She later earned her Master of Business Administration (MBA) from one of Europe’s leading business schools.</p>
+                            
+                            <p>After graduation, she joined GGV Capital as an Investment Advisor. She worked extensively on numerous venture capital investments across Asia, building a robust portfolio of deal experience and extensive global industry networks. Following her years of experience in Asia’s venture ecosystem, she relocated to the United States to continue her work in frontier technology investing.</p>
+
+                            <p>She focuses on long-term value investing in AI and emerging technology sectors. As co-founder and board member, she architected Vanev Capital’s investment philosophy and research framework, seeking to identify technology ventures with durable technical moats and sustainable long-term growth potential.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-subheader">
+                    <h3>Strategic Leadership & Advisors</h3>
+                </div>
+                <div class="interactive-board">
+                    
+                    <!-- Thomas Ng - Strategic Founder -->
+                    <div class="board-member-card">
+                        <div class="bm-image-wrapper">
+                            <img src="thomas.jpg" alt="Thomas Ng">
+                        </div>
+                        <div class="bm-brief">
+                            <h4 class="bm-name">Thomas Ng</h4>
+                            <p class="bm-title">Strategic Founder</p>
+                            <div class="bm-summary">
+                                <p>Co-founder of GGV Capital and a pioneer in cross-border venture capital across Asia. With decades of experience in technology and macro cycle analysis, Thomas launched the European crypto asset research initiative in 2019 and architected the core AI quantitative trading framework for Vanev Capital. He focuses on digital asset strategy, offshore wealth planning and compute infrastructure strategy.</p>
+                            </div>
+                            <button class="bm-toggle-btn" data-modal-target="modal-thomas">Read Full Profile <span class="arrow">↓</span></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Board Member 1 -->
+                    <div class="board-member-card">
+                        <div class="bm-image-wrapper">
+                            <img src="Julian.png" alt="Julian Ashford">
+                        </div>
+                        <div class="bm-brief">
+                            <h4 class="bm-name">Julian Ashford</h4>
+                            <p class="bm-title">Strategic Capital<br>Advisor</p>
+                            <div class="bm-summary">
+                                <p><strong>Expertise:</strong> Long-term institutional capital, sovereign & insurance capital allocation, alternative asset risk modeling, and capital structure optimization.</p>
+                                <p><strong>Value:</strong> Delivers an institutional capital perspective to assess long-term asset resilience, portfolio risk architecture, and alignment with tier-one global capital mandates.</p>
+                            </div>
+                            <button class="bm-toggle-btn" data-modal-target="modal-julian">Read Full Profile <span class="arrow">↓</span></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Board Member 2 -->
+                    <div class="board-member-card">
+                        <div class="bm-image-wrapper">
+                            <img src="Robert.png" alt="Robert C. Hastings">
+                        </div>
+                        <div class="bm-brief">
+                            <h4 class="bm-name">Robert C. Hastings</h4>
+                            <p class="bm-title">Corporate Growth &<br>Global Strategy Advisor</p>
+                            <div class="bm-summary">
+                                <p><strong>Expertise:</strong> Enterprise scale-up, global commercial expansion, executive talent architecture, and cross-border tech enterprise operations.</p>
+                                <p><strong>Value:</strong> Delivers an operational operator's perspective to assess executive leadership capability, scalable go-to-market execution, and global market expansion pathways.</p>
+                            </div>
+                            <button class="bm-toggle-btn" data-modal-target="modal-robert">Read Full Profile <span class="arrow">↓</span></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Board Member 3 -->
+                    <div class="board-member-card">
+                        <div class="bm-image-wrapper">
+                            <img src="Ethan.png" alt="Dr. Ethan Caldwell">
+                        </div>
+                        <div class="bm-brief">
+                            <h4 class="bm-name">Dr. Ethan Caldwell</h4>
+                            <p class="bm-title">DeepTech & AI Investment<br>Strategy Advisor</p>
+                            <div class="bm-summary">
+                                <p><strong>Expertise:</strong> Frontier AI architectures, foundational model validation, compute infrastructure, and scientific due diligence for hard-tech ventures.</p>
+                                <p><strong>Value:</strong> Provides a rigorous scientific and technology investment perspective to differentiate durable technological breakthroughs from transitory market trends.</p>
+                            </div>
+                            <button class="bm-toggle-btn" data-modal-target="modal-ethan">Read Full Profile <span class="arrow">↓</span></button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+        <!-- STRATEGIC PERSPECTIVE SECTION -->
+        <section id="perspective" class="perspective-section reveal">
+            <div class="container">
+                <div class="section-label">STRATEGIC PERSPECTIVE</div>
+                
+                <div class="editorial-layout">
+                    
+                    <div class="ed-block ed-oversized" style="position: relative; padding: 80px 40px; overflow: hidden; border-radius: 4px; border: 1px solid #1a1a1a; margin-bottom: 20px;">
+                        <video autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; opacity: 0.5; filter: grayscale(60%);">
+                            <source src="assets/16204013_2560_1440_30fps.mp4" type="video/mp4">
+                        </video>
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(7,7,7,0.95) 0%, rgba(7,7,7,0.3) 100%); z-index: 2;"></div>
+                        <h2 class="ed-heading" style="position: relative; z-index: 3; text-shadow: 0 4px 20px rgba(0,0,0,0.8);">We do not focus simply on short-term returns. Our core commitment is establishing sustainable competitive advantages and creating profound long-term value.</h2>
+                    </div>
+    
+                    <div class="ed-row">
+                        <div class="ed-col ed-col-left">
+                            <div class="ed-block ed-tech">
+                                <h3 class="ed-sub">Technology & Innovation</h3>
+                                <p>Our focus lies strictly at the forefront of AI, data technology, automation, FinTech, Web3.0, and other emerging technologies that demonstrate definitive long-term growth potential.</p>
+                            </div>
+                        </div>
+                        <div class="ed-col ed-col-right">
+                            <div class="ed-block ed-eval">
+                                <h3 class="ed-sub">Strategic Evaluation</h3>
+                                <p>Potential investment and strategic opportunities undergo rigorous scrutiny. We evaluate prospects across multiple dimensions—technology capabilities, business models, management teams, organizational efficiency, market opportunities, financial performance, risk factors, and long-term capital returns.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="ed-block ed-connect">
+                        <div class="ed-line"></div>
+                        <h3 class="ed-sub">Connecting Capital, Technology, Data & Talent</h3>
+                        <p class="ed-lead-p">Vanev Capital actively bridges capital, technology, data, elite talent, and real-world industry needs through disciplined investment, continuous research, and strategic resource integration.</p>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section reveal">
+        <div class="container">
+            <div class="section-label">GET IN TOUCH</div>
+            <h2>Contact</h2>
+            <div class="accent-line"></div>
+            <p class="lead-text" style="max-width: 600px; margin-bottom: 50px;">Connect with Vanev Capital. Reach out to discuss investment opportunities, strategic partnerships, or operational collaborations.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info-panel">
+                    <div class="contact-item">
+                        <span class="contact-label">ADDRESS</span>
+                        <p class="contact-value">901 Main St, Dallas, TX 75202（Coming Soon)</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">EMAIL</span>
+                        <p class="contact-value">team@vanevcapital.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">PHONE</span>
+                        <p class="contact-value">1 (332) 283-2710</p>
+                    </div>
+                </div>
+                
+                <div class="contact-image-panel" style="position: relative; overflow: hidden; border-radius: 4px; border: 1px solid #1a1a1a; min-height: 400px; display: flex; align-items: flex-end;">
+                    <img src="assets/about-image.jpg" alt="Vanev Capital Global Access" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(80%) contrast(1.1); transition: transform 0.8s ease;">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(5,5,5,0.95) 0%, rgba(5,5,5,0.2) 100%);"></div>
+                    <div style="position: relative; z-index: 2; padding: 40px;">
+                        <h3 style="color: #ffffff; font-size: 1.5rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px;">Global Access</h3>
+                        <p style="color: var(--gray); font-size: 0.95rem; line-height: 1.6; margin: 0; max-width: 90%;">Operating at the nexus of technological innovation and institutional capital to deliver uncompromised long-term value.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>VANEV CAPITAL</h2>
+                    <p>An investment and strategic management firm focused on artificial intelligence, innovative capital, and long-term value creation.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#segments">Segments</a></li>
+                        <li><a href="#philosophy">Philosophy</a></li>
+                        <li><a href="#capabilities">Capabilities</a></li>
+                        <li><a href="#platforms">Platforms</a></li>
+                        <li><a href="#leadership">Leadership</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-compliance">
+                <p><strong>IMPORTANT DISCLOSURES:</strong> This website is for informational purposes only and does not constitute an offer to sell, a solicitation to buy, or a recommendation for any security, nor does it constitute an offer to provide investment advisory or other services by Vanev Capital. Nothing contained on this website constitutes investment, legal, tax, or other advice and should not be relied upon in making an investment or other decision.</p>
+                <p>Past performance is not indicative of future results. All investments involve risk, including the possible loss of principal. Any forward-looking statements or projections are subject to risks and uncertainties. Vanev Capital makes no representations or warranties as to the accuracy, reliability, or completeness of the information provided herein.</p>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-legal-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <span class="divider">|</span>
+                    <a href="terms-of-use.html">Terms of Use</a>
+                </div>
+                <p>&copy; 2026 Vanev Capital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals Container -->
+    <div class="modals-container">
+        
+        <!-- Thomas Ng Modal -->
+        <div class="vanev-modal" id="modal-thomas">
+            <div class="vanev-modal-backdrop"></div>
+            <div class="vanev-modal-content">
+                <button class="vanev-modal-close">&times; CLOSE</button>
+                <div class="vanev-modal-body">
+                    <h3 class="modal-name">Thomas Ng</h3>
+                    <p class="modal-title">Strategic Founder</p>
+                    <div class="modal-divider"></div>
+                    <p>Thomas Ng is Strategic Founder of Vanev Capital and Co-founder of GGV Capital, a seasoned venture investor and pioneer in Asia’s tech investment ecosystem.</p>
+                    <p>He earned his PhD from the University of Wisconsin-Madison. After early research and industrial experience in the United States, he established his venture practice in Singapore. In 2000, he co-founded GGV Capital and built a cross-border investment network covering China, the US and Southeast Asia. He led investments in landmark companies including Grab and Alibaba, navigating multiple full market cycles with deep expertise in cross-border risk control, valuation and M&A.</p>
+                    <p>He first met Armand Dubois in Singapore’s offshore FX markets in the 1980s. The two have collaborated for decades, exchanging insights on global liquidity, foreign exchange and offshore asset pricing. During the 2008 financial crisis, his disciplined, risk-first approach defined a core philosophy that carries through to Vanev’s strategies today.</p>
+                    <p>Thomas has tracked blockchain and digital assets for years, studying global liquidity shifts and regulatory cycles. In 2019, together with Armand Dubois, he launched an independent crypto analyst program in Europe, building research infrastructure for high-net-worth clients and pioneering AI-augmented quantitative trading workflows.</p>
+                    <p>After years of live-market testing, the AI-quant framework matured and a tiered analyst team was formed. As Strategic Founder of Vanev Capital, he guides macro cycle research and oversees the Tahoe-Reno compute center roadmap, bringing the firm’s proven digital asset trading system to North America.</p>
+                    <p>His core investment tenets: respect market cycles, prioritize risk controls, and build long-term trust over short-term gains.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Julian Ashford Modal -->
+        <div class="vanev-modal" id="modal-julian">
+            <div class="vanev-modal-backdrop"></div>
+            <div class="vanev-modal-content">
+                <button class="vanev-modal-close">&times; CLOSE</button>
+                <div class="vanev-modal-body">
+                    <h3 class="modal-name">Julian Ashford</h3>
+                    <p class="modal-title">Board Advisor / Member of the Strategic Advisory Committee<br>Strategic Capital Advisor | Vanev Capital</p>
+                    <div class="modal-divider"></div>
+                    <p>Julian Ashford is a seasoned leader in global alternative asset allocation, sovereign and insurance wealth management, and capital structuring with more than twenty-five years of experience. He previously served as Managing Director of Institutional Portfolio Risk at major international asset management institutions, overseeing multi-billion-dollar diversified portfolios and leading strategic capital allocation across private credit, real assets, and liquidity facilities.</p>
+                    <p>Throughout his career, Julian has specialized in establishing quantitative risk-governance architectures, evaluating long-term asset-liability stability, and crafting resilient balance sheet strategies capable of navigating shifting macroeconomic cycles. He has advised sovereign funds, institutional endowments, and private capital consortia on capital preservation and cross-border risk pricing.</p>
+                    <p>As a Strategic Capital Advisor to Vanev Capital, Julian provides strategic oversight on the firm’s investment risk frameworks, asset evaluation methodologies, and capital structuring for portfolio ventures. From the perspective of premier institutional allocators, he assists the team in refining risk identification, strengthening capital efficiency, and ensuring that Vanev Capital’s portfolio investments are built to attract and sustain long-term global capital.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Robert C. Hastings Modal -->
+        <div class="vanev-modal" id="modal-robert">
+            <div class="vanev-modal-backdrop"></div>
+            <div class="vanev-modal-content">
+                <button class="vanev-modal-close">&times; CLOSE</button>
+                <div class="vanev-modal-body">
+                    <h3 class="modal-name">Robert C. Hastings</h3>
+                    <p class="modal-title">Board Advisor / Member of the Strategic Advisory Committee<br>Corporate Growth & Globalization Strategy Advisor</p>
+                    <div class="modal-divider"></div>
+                    <p>Robert C. Hastings brings more than twenty-two years of executive operating and board advisory experience across multinational technology corporations and high-growth enterprise software platforms. He has guided multiple enterprise tech ventures from early commercialization to scalable global operations, driving successful market expansions across North America, Europe, and the Asia-Pacific region.</p>
+                    <p>With deep expertise in organizational engineering, revenue model scaling, and executive leadership recruitment, Robert specializes in empowering founders to transition from initial product-market fit to sustainable, global market dominance. He has held chief operating and corporate strategy roles in pioneering software and data analytics enterprises.</p>
+                    <p>As a member of Vanev Capital’s Strategic Advisory Board, Robert works closely with leadership and portfolio founders to assess organizational maturity and commercial scalability. He empowers entrepreneurial teams to formulate disciplined go-to-market engines, optimize operational workflows, and execute ambitious international expansion strategies while maintaining robust governance.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dr. Ethan Caldwell Modal -->
+        <div class="vanev-modal" id="modal-ethan">
+            <div class="vanev-modal-backdrop"></div>
+            <div class="vanev-modal-content">
+                <button class="vanev-modal-close">&times; CLOSE</button>
+                <div class="vanev-modal-body">
+                    <h3 class="modal-name">Dr. Ethan Caldwell</h3>
+                    <p class="modal-title">Board Advisor / Member of the Strategic Advisory Committee<br>DeepTech & AI Investment Strategy Advisor</p>
+                    <div class="modal-divider"></div>
+                    <p>Dr. Ethan Caldwell is a distinguished technologist, computer scientist, and DeepTech investment strategist with nearly three decades of experience at the forefront of frontier computing and artificial intelligence. Holding a Ph.D. in Computer Science and Electrical Engineering, he has led advanced research initiatives in distributed systems, machine intelligence architectures, and high-performance computing.</p>
+                    <p>As an investor and scientific advisor to next-generation technology ventures, Dr. Caldwell adheres to a thesis-first investment philosophy anchored in fundamental physical feasibility, architectural efficiency, and defensible intellectual property. He specializes in evaluating core algorithmic originality, model distillation efficiencies, and the technical viability of complex AI infrastructure.</p>
+                    <p>Serving on Vanev Capital’s Strategic Advisory Board, Dr. Caldwell guides the platform’s scientific due diligence and technology evaluation framework. He assists the team in vetting proprietary algorithms, identifying genuine foundational breakthroughs in AI and data technology, and helping portfolio startups establish durable technological moats against global competition.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
